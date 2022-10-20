@@ -94,9 +94,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Model\APICurrencyLayer.cs" />
-    <Compile Include="Model\APIFixerIO.cs" />
-    <Compile Include="Model\APIRussiaBank.cs" />
+    <Compile Include="Model\APIController.cs" />
+    <Compile Include="Model\Enum\ActionsAPI.cs" />
     <Compile Include="Presenter\DataHandler.cs" />
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

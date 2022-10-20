@@ -25,9 +25,11 @@ namespace DynamicCurrencyCalculator
     {
         public MainWindow()
         {
+            //Binding + моделька-класс Handler
+
             InitializeComponent();
             DataHandler data = new DataHandler();
-            txtBox.Text = data.MyMainMethod().Content.ToString();
+            txtBox.Text = data.Handler().Content.ToString();
 
             
         }

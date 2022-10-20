@@ -11,12 +11,9 @@ namespace DynamicCurrencyCalculator.Presenter
 {
     internal class DataHandler
     {
-        public RestResponse MyMainMethod()
+        // Использовать не заранее подготовленную модельку данных, а сам класс, в котором реализована логика, - как модель данных
+        public void Handler()
         {
-            APIRussiaBank russiaBank = new APIRussiaBank();
-
-            //APIFixerIO fixer = new APIFixerIO();
-            return russiaBank.GetAllActualCurrency();
             
         }
     }
