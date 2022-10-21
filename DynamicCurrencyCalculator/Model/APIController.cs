@@ -25,9 +25,10 @@ namespace DynamicCurrencyCalculator.Model
         public RestResponse CurrencyLayer(ActionsAPI Action)
         {
             string URL = "https://api.apilayer.com/currency_data/live";
-
+            
             switch (Action)
             {
+                
                 case ActionsAPI.CURRENCY_VALUE:
                     RestClient client = new RestClient(URL);
                     var request = new RestRequest();
@@ -35,8 +36,8 @@ namespace DynamicCurrencyCalculator.Model
                     var response = client.Get(request);
                     //Выводимый тип: RestSharp.RestResponse
                     return response;
-                //default:
-                //    return ;
+                default:
+                    return new RestResponse();
             }
         }
         /// <summary>
@@ -57,8 +58,8 @@ namespace DynamicCurrencyCalculator.Model
                     var response = client.Get(request);
                     //Выводимый тип: RestSharp.RestResponse
                     return response;
-                //default:
-                //    return ;
+                default:
+                    return new RestResponse();
             }
         }
         /// <summary>
@@ -78,8 +79,8 @@ namespace DynamicCurrencyCalculator.Model
                     var response = client.Get(request);
                     //Выводимый тип: RestSharp.RestResponse
                     return response;
-                //default:
-                //    return;
+                default:
+                    return new RestResponse(); 
             }
         }
     }

@@ -97,6 +97,7 @@
     <Compile Include="Model\APIController.cs" />
     <Compile Include="Model\Enum\ActionsAPI.cs" />
     <Compile Include="Presenter\DataHandler.cs" />
+    <Compile Include="Presenter\Example.cs" />
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

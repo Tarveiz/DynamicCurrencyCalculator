@@ -14,7 +14,8 @@ namespace DynamicCurrencyCalculator.Presenter
         // Использовать не заранее подготовленную модельку данных, а сам класс, в котором реализована логика, - как модель данных
         public void Handler()
         {
-            
+            APIController controller = new APIController();
+            var L = controller.CurrencyLayer(ActionsAPI.CURRENCY_VALUE);
         }
     }
 }

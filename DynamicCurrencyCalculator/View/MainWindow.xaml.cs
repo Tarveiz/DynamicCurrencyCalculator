@@ -29,7 +29,7 @@ namespace DynamicCurrencyCalculator
 
             InitializeComponent();
             DataHandler data = new DataHandler();
-            txtBox.Text = data.Handler().Content.ToString();
+            data.Handler();
 
             
         }
